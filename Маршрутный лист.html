@@ -1,0 +1,1517 @@
+<html lang="ru">
+<head>
+<title>Маршрутный лист PCS7306578</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;subset=cyrillic" rel="stylesheet"/>
+<style type="text/css">
+        html, body {
+            font-size: 12px;
+            line-height: 14px;
+
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body h3 {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 0;
+            margin: 5px 0 10px 0;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+
+            font-size: 11px;
+            line-height: 14px;
+
+            table-layout: fixed;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 3px 2px 2px 2px;
+        }
+
+        table.print-table-header tbody tr:nth-child(2) td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        table.print-table-shipping-list,
+        table.print-table-shipping-list thead th {
+            border-top: none;
+            font-size: 10px;
+        }
+
+        table tr.print-table-help-row td {
+            border: none;
+            text-align: center;
+            vertical-align: top;
+            font-size: 8px;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            padding-top: 0;
+        }
+
+        table tr.print-table-inner-table-row td {
+            border-top: none;
+            padding: 0 0 0 137px;
+        }
+
+        table.print-table-inner-table {
+            table-layout: auto;
+            width: auto;
+
+            font-size: 8px;
+            line-height: 10px;
+
+            border-bottom: none;
+        }
+
+        table.print-table-inner-table tr td {
+            padding: 4px 2px !important;
+            text-align: left;
+            width: 170px;
+        }
+
+        table.print-table-inner-table tr:first-child td:first-child {
+            font-weight: bold;
+        }
+
+        table.print-table-inner-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        table tr.print-table-cols-header-row td {
+            font-weight: bold;
+        }
+
+        table th.print-table-row-multiplace-order-number {
+            width: 80px;
+        }
+
+        table th.print-table-row-priority {
+            width: 58px;
+            font-size: 8px !important;
+        }
+
+        table th.print-table-row-order-number {
+            width: 120px;
+        }
+
+        table .print-table-row-sender-order-number {
+            overflow-wrap: break-word;
+            width: 170px;
+        }
+
+        table th.print-table-row-fio {
+            width: 130px;
+        }
+
+        table th.print-table-row-address {
+            width: 140px;
+        }
+
+        table th.print-table-row-working-scheduler {
+            width: 80px;
+        }
+
+        table th.print-table-row-phone-number {
+            width: 80px;
+        }
+
+        table th.print-table-row-cod {
+            width: 70px;
+        }
+
+        table th.print-table-row-delivery-time {
+            width: 50px;
+        }
+
+        table th.print-table-row-delivery-date {
+            width: 80px;
+        }
+
+        table th.print-table-row-failed-reason {
+            width: 65px;
+        }
+
+        table th.print-table-row-comment {
+            width: 200px;
+        }
+
+        table td.print-table-row-multiplace-order-number {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        table td.print-table-row-order-number {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        table td.print-table-row-sender-order-number {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        table td.print-table-row-fio {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        table td.print-table-row-comment {
+            text-align: left;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        table th.print-table-row-count {
+            width: 50px;
+        }
+
+        table th.print-table-row-signature {
+            width: 80px;
+        }
+
+        /*
+         * Этот костыль нужен чтобы при печати в случае если margins в браузере указаны как none
+         * Но в таком случае без этого костыля, отступа от верхней границы листа не будет совсем
+         * А таблицу с подписями мы всегда выводим на отдельном печатном листе
+         */
+        table.print-table-report tr:first-child,
+        table.print-table-report tr:first-child th {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding: 10px 0;
+        }
+
+        table.print-table-report {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        table tr.print-table-signature-row td{
+            padding-top: 40px;
+        }
+
+        table tr.print-table-report-header td,
+        table tr.print-table-report-header th {
+            padding: 8px 0;
+        }
+
+        table tr.print-table-report-row td,
+        table tr.print-table-report-row th{
+            padding: 6px 4px;
+            text-align: left;
+        }
+
+        .expired-postamat-code {
+            font-size: 8px;
+            font-weight: bold;
+            text-align: left;
+            margin: 0 5px;
+        }
+
+        @media print {
+            table.print-table-report {
+                page-break-before: always;
+            }
+        }
+        .package-priority {
+            text-decoration: underline;
+        }
+        .shipment-flag {
+            display: none;
+        }
+        .shipment-flag.package-priority {
+            display: unset;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+<style media="print" type="text/css">
+        @page {
+            size: landscape;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<h3>Маршрутный лист</h3>
+<table class="print-table-shipping-list">
+<thead>
+<tr class="print-table-cols-header-row">
+<th class="print-table-row-multiplace-order-number">№ партии/ № многоместного отправления</th>
+<th class="print-table-row-priority">Содержит приоритетное отправление</th>
+<th class="print-table-row-order-number">№ посылки</th>
+<th class="print-table-row-sender-order-number">№ заказа отправителя</th>
+<th class="print-table-row-fio">ФИО Получателя /<br/>Отправителя</th>
+<th class="print-table-row-address">Адрес доставки /<br/>приема</th>
+<th class="print-table-row-working-scheduler">График работы /<br/>Интервал доставки</th>
+<th class="print-table-row-phone-number">Телефон</th>
+<th class="print-table-row-cod">Сумма наложенного платежа, руб.</th>
+<th class="print-table-row-delivery-time">Время доставки</th>
+<th class="print-table-row-delivery-date">Согласованная дата доставки</th>
+<th class="print-table-row-failed-reason">Причина неудачной доставки / сбора</th>
+<th class="print-table-row-comment">Комментарий</th>
+<th class="print-table-row-count">Кол-во посылок в партии</th>
+<th class="print-table-row-signature">Подпись получателя</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782056394
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">FRhXJ5kLQb</td>
+<td class="print-table-row-sender-order-number">QzHVBtv3jA</td>
+<td class="print-table-row-fio">zxCJ1BAQfF</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 8, д 13, кв 52</td>
+<td>
+</td>
+<td>TKdP2bNPmL</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            06-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    3
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP780944280
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">wkAKFP3oyx</td>
+<td class="print-table-row-sender-order-number">jJS5OlFPNK</td>
+<td class="print-table-row-fio">nYA0WjPJQ6</td>
+<td>358014, Респ Калмыкия, г Элиста, тер Сити-Чесс, д 24</td>
+<td>
+</td>
+<td>Qi2Z9yRpvh</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782541268
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">TpnOZRlHFZ</td>
+<td class="print-table-row-sender-order-number">m6w00qyvaT</td>
+<td class="print-table-row-fio">kEGwXNKjwU</td>
+<td>358016, Респ Калмыкия, г Элиста, мкр 7, д 3 к 4, кв 4</td>
+<td>
+</td>
+<td>ty3wK19DHP</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782580451
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">xSAnIPH5JR</td>
+<td class="print-table-row-sender-order-number">dnn1D5s796</td>
+<td class="print-table-row-fio">IZ1z98an9d</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 2, д 31, кв 25</td>
+<td>
+</td>
+<td>S4e0W8FTZS</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            08-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782618419
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">t554bhSwgi</td>
+<td class="print-table-row-sender-order-number">wrbEaQima3</td>
+<td class="print-table-row-fio">U5IKcLHf8n</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 2, д 31, кв 25</td>
+<td>
+</td>
+<td>y8htkdXNAW</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            08-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP781832145
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">1u0sVd8kI2</td>
+<td class="print-table-row-sender-order-number">hzuwC4f1Vi</td>
+<td class="print-table-row-fio">aQUIDJMURd</td>
+<td>358003, Респ Калмыкия, г Элиста, мкр 2, д 17, кв 27</td>
+<td>
+</td>
+<td>PFkbDawRxG</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783679902
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">sXBb6xEL0q</td>
+<td class="print-table-row-sender-order-number">ZoOGRZltOg</td>
+<td class="print-table-row-fio">vw9WTuio1A</td>
+<td>358008, Респ Калмыкия, г Элиста, проезд 3-й, д 1</td>
+<td>
+</td>
+<td>gyCJUlJC49</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            08-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    2
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783302801
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">V8o4gO4J2p</td>
+<td class="print-table-row-sender-order-number">9IaXRNjHsd</td>
+<td class="print-table-row-fio">HmMgSGrUFX</td>
+<td>358016, Респ Калмыкия, г Элиста, мкр 7, д 5 к 2, кв 555</td>
+<td>
+</td>
+<td>x10TqFq7WF</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    7
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782100552
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">gfLc1KbByg</td>
+<td class="print-table-row-sender-order-number">4pIHU5eQFw</td>
+<td class="print-table-row-fio">cMUXZ1sVGv</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 9, д 37, кв 2</td>
+<td>
+</td>
+<td>UwLmeGrVVr</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783664603
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">fYbvtyvZQe</td>
+<td class="print-table-row-sender-order-number">yU1BdUbg0d</td>
+<td class="print-table-row-fio">FEmoCoKc5d</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 2, д 24, кв 59</td>
+<td>
+</td>
+<td>TtwdXpjHHh</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP781534056
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">oPrHw6QVoJ</td>
+<td class="print-table-row-sender-order-number">TnNz6fyAft</td>
+<td class="print-table-row-fio">xyNUTamQme</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр Сити-3, д 6, кв 1</td>
+<td>
+</td>
+<td>L5yjXODwhW</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            09-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783182509
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">3PlS5DA25l</td>
+<td class="print-table-row-sender-order-number">d95MrSKJKo</td>
+<td class="print-table-row-fio">XQTxhTqsMG</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 9, д 53, кв 143</td>
+<td>
+</td>
+<td>DeZ28X1FmE</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP784094531
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">hlx7cFT0qI</td>
+<td class="print-table-row-sender-order-number">i8kOQm5Q30</td>
+<td class="print-table-row-fio">T9G6jsRlT6</td>
+<td>358016, Респ Калмыкия, г Элиста, мкр 7, д 5 к 4, кв 4</td>
+<td>
+</td>
+<td>mj7zKb3NKZ</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            08-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP781920479
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">5BoBam7Yey</td>
+<td class="print-table-row-sender-order-number">r1y6WOBadx</td>
+<td class="print-table-row-fio">kzz7dh2mMl</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 8, д 67, кв 40</td>
+<td>
+</td>
+<td>ewgs7hcQfO</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782182640
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">QyQ0Xq5O1F</td>
+<td class="print-table-row-sender-order-number">3UXb2phBQZ</td>
+<td class="print-table-row-fio">ED9ijrDkb0</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 9, д 28, кв 103</td>
+<td>
+</td>
+<td>wzyRWbjFKt</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP781599677
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">hMrcHDgLnY</td>
+<td class="print-table-row-sender-order-number">5udGi1sWLC</td>
+<td class="print-table-row-fio">C0hrivE0vi</td>
+<td>358003, Респ Калмыкия, г Элиста, мкр 2, д 17Д</td>
+<td>
+</td>
+<td>7OvuoyCSAU</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            09-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783027857
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">YQqSLJO2XJ</td>
+<td class="print-table-row-sender-order-number">kZynr4zpj2</td>
+<td class="print-table-row-fio">Vr0FwYyWco</td>
+<td>358016, Респ Калмыкия, г Элиста, ул имени Дорджи Чокаева, д 15</td>
+<td>
+</td>
+<td>3MqB8ghsIy</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782475203
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">APIpIIBtCk</td>
+<td class="print-table-row-sender-order-number">PjQNtii4QW</td>
+<td class="print-table-row-fio">aDcy9JLGwK</td>
+<td>358016, Респ Калмыкия, г Элиста, мкр 7, д 1 к 9, кв 21</td>
+<td>
+</td>
+<td>OVpstlsH02</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            10-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782319898
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">i01YA7m7Ig</td>
+<td class="print-table-row-sender-order-number">DUaNxQGXvE</td>
+<td class="print-table-row-fio">sJ0IWv4DBn</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 9, д 52, кв 37</td>
+<td>
+</td>
+<td>p8nvPVIBR3</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP779179765
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">qBExppyj3G</td>
+<td class="print-table-row-sender-order-number">S0iSG98vwU</td>
+<td class="print-table-row-fio">Z0q7VzoEGk</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 9, д 21, кв 15</td>
+<td>
+</td>
+<td>QYzZsfkoSj</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+                                                        
+                                        30-04-2024
+    
+                    </span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782541119
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">O9BV7qrVNw</td>
+<td class="print-table-row-sender-order-number">n7iMv5DQKW</td>
+<td class="print-table-row-fio">evgXY5QFjH</td>
+<td>358016, Респ Калмыкия, г Элиста, мкр 7, д 3 к 4, кв 4</td>
+<td>
+</td>
+<td>3aXKCxLx0p</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP781233661
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">esnCQj0Xwl</td>
+<td class="print-table-row-sender-order-number">1iN5QaIDUc</td>
+<td class="print-table-row-fio">kO7WuD6T7g</td>
+<td>358003, Респ Калмыкия, г Элиста, ул Улан-Туг, влд 2В</td>
+<td>
+</td>
+<td>zDEC9kFUuu</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+                                                        
+                                        30-04-2024
+    
+                    </span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782580453
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">NxyGmY8YsR</td>
+<td class="print-table-row-sender-order-number">HA3G5rNICp</td>
+<td class="print-table-row-fio">zVFjW2IHRb</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 2, д 31, кв 25</td>
+<td>
+</td>
+<td>a5bgpzjRMJ</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            08-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP780836971
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">RP9yhOqRv1</td>
+<td class="print-table-row-sender-order-number">XHXyTM20tS</td>
+<td class="print-table-row-fio">kmKJq9zJIk</td>
+<td>358014, Респ Калмыкия, г Элиста, тер Сити-Чесс, д 24</td>
+<td>
+</td>
+<td>6fyEiJLg0W</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783401355
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">65a4Nei4l7</td>
+<td class="print-table-row-sender-order-number">4rRoJt40ly</td>
+<td class="print-table-row-fio">wmAOLPvd8w</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр Сити-3, д 25</td>
+<td>
+</td>
+<td>DzX0cO1XAN</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            08-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783678776
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">LPZcGNmm9G</td>
+<td class="print-table-row-sender-order-number">SCZPv1tnrS</td>
+<td class="print-table-row-fio">szroWTvBRS</td>
+<td>358008, Респ Калмыкия, г Элиста, проезд 3-й, д 1</td>
+<td>
+</td>
+<td>ovIbf48xyI</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            08-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    2
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782994945
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">jkbPL27jZD</td>
+<td class="print-table-row-sender-order-number">VSnUiNsRjw</td>
+<td class="print-table-row-fio">zioZ9Jfgjf</td>
+<td>358016, Респ Калмыкия, г Элиста, ул имени Дорджи Чокаева, д 15</td>
+<td>
+</td>
+<td>W5RmRYFiog</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    2
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782541267
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">ozLaHxz7AE</td>
+<td class="print-table-row-sender-order-number">kTLZivQQIC</td>
+<td class="print-table-row-fio">iEzUolexSL</td>
+<td>358016, Респ Калмыкия, г Элиста, мкр 7, д 3 к 4, кв 4</td>
+<td>
+</td>
+<td>6bUQAyJkdK</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782322543
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">5Fa5U8eORZ</td>
+<td class="print-table-row-sender-order-number">gv4C9Vv5iO</td>
+<td class="print-table-row-fio">XdhVOFOZEj</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 9, д 52, кв 37</td>
+<td>
+</td>
+<td>SqcaWcxwSi</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP784026252
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">J7CA7xwBjH</td>
+<td class="print-table-row-sender-order-number">e5zxH0UnOU</td>
+<td class="print-table-row-fio">OjSOJ53k3r</td>
+<td>358014, Респ Калмыкия, г Элиста, тер Сити-Чесс, д 9/3</td>
+<td>
+</td>
+<td>q64BEIkBJc</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            09-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782351178
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">GWknyLhbaU</td>
+<td class="print-table-row-sender-order-number">GMJrICN5iJ</td>
+<td class="print-table-row-fio">IRkxWHv4Li</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 9, д 52, кв 37</td>
+<td>
+</td>
+<td>ogP4IWhvwk</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP779135928
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">nQMczAPjIy</td>
+<td class="print-table-row-sender-order-number">fynTunMKjJ</td>
+<td class="print-table-row-fio">I0A3MeqlsD</td>
+<td>358014, Респ Калмыкия, г Элиста, тер Сити-Чесс, д 24</td>
+<td>
+</td>
+<td>hLco2jVvNe</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            14-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    3
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783302794
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">VhmcWFxWnc</td>
+<td class="print-table-row-sender-order-number">z0eLLBrsVU</td>
+<td class="print-table-row-fio">9inb5uIegB</td>
+<td>358016, Респ Калмыкия, г Элиста, мкр 7, д 5 к 2, кв 555</td>
+<td>
+</td>
+<td>Fhw7mxFhEz</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782900989
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">yOXoQ7eSt0</td>
+<td class="print-table-row-sender-order-number">syAY60vAXO</td>
+<td class="print-table-row-fio">zACCdWSKxT</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 9, д 28, кв 71</td>
+<td>
+</td>
+<td>TJbAUn1qd3</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783834332
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">XG8jNe5Gx4</td>
+<td class="print-table-row-sender-order-number">Noy41gIZrf</td>
+<td class="print-table-row-fio">oUyrndKBDK</td>
+<td>358016, Респ Калмыкия, г Элиста, мкр 6, д 23Г</td>
+<td>
+</td>
+<td>I2NNZbQP2T</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            08-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP781231803
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">cfEwHekwjt</td>
+<td class="print-table-row-sender-order-number">04Yn7AWbiI</td>
+<td class="print-table-row-fio">29cU2chpIa</td>
+<td>358003, Респ Калмыкия, г Элиста, мкр 2, д 37 к 39, кв 39</td>
+<td>
+</td>
+<td>OSuzYpzSZR</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP782257538
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">KMGqoRLqHK</td>
+<td class="print-table-row-sender-order-number">4QKtfaaxO7</td>
+<td class="print-table-row-fio">qJNxQxORZ8</td>
+<td>358003, Респ Калмыкия, г Элиста, мкр 2, д 17, кв 27</td>
+<td>
+</td>
+<td>TnNmegL57z</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP780235882
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">uja6WxDDBC</td>
+<td class="print-table-row-sender-order-number">tQhgbBVRFS</td>
+<td class="print-table-row-fio">iyq8uVHARI</td>
+<td>358014, Респ Калмыкия, г Элиста, мкр 8, д 65, кв 123</td>
+<td>
+</td>
+<td>2iLAL7JTY5</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+                                                        
+                                        30-04-2024
+    
+                    </span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP781787080
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">ci2HoQtztS</td>
+<td class="print-table-row-sender-order-number">BlwdfpJ9FJ</td>
+<td class="print-table-row-fio">ZQ1J3WUnV7</td>
+<td>358003, Респ Калмыкия, г Элиста, мкр 2, д 17, кв 27</td>
+<td>
+</td>
+<td>crcQ01CpWP</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            07-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+<tr>
+<td class="print-table-row-multiplace-order-number">
+                    RP783732340
+            </td>
+<td>
+<span class="shipment-flag package-priority">+</span>
+</td>
+<td class="print-table-row-order-number">RdlGydH29x</td>
+<td class="print-table-row-sender-order-number">OEn4v6A2Ff</td>
+<td class="print-table-row-fio">tscpZFJqyH</td>
+<td>358016, Респ Калмыкия, г Элиста, мкр 7, д 1 к 6, кв 17</td>
+<td>
+</td>
+<td>vBrF97KATO</td>
+<td></td>
+<td></td>
+<td>
+<span style="display: inline-block; min-width: 5.2em">
+<strong class="text-danger">            08-05-2024
+    </strong>
+</span>
+</td>
+<td></td>
+<td class="print-table-row-comment"></td>
+<td>
+                    1
+            </td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="print-table-report">
+<tbody>
+<tr>
+<th colspan="12"></th>
+</tr>
+<tr class="print-table-report-header">
+<th colspan="12">Курьер</th>
+</tr>
+<tr class="print-table-signature-row">
+<td colspan="2"><strong>________________</strong></td>
+<td colspan="5"><strong>_______________________________</strong></td>
+<td colspan="5"><strong>_______________________________</strong></td>
+</tr>
+<tr class="print-table-help-row">
+<td colspan="2">дата</td>
+<td colspan="5">подпись</td>
+<td colspan="5">расшифровка</td>
+</tr>
+<tr class="print-table-report-header">
+<th colspan="6">Отчет по доставке</th>
+<th colspan="6">Отчет о сборах</th>
+</tr>
+<tr class="print-table-report-row">
+<td colspan="2">Доставлено посылок</td>
+<td colspan="4"></td>
+<td colspan="2">Выполнено сборов</td>
+<td colspan="4"></td>
+</tr>
+<tr class="print-table-report-row">
+<td colspan="2">Доставлено партий</td>
+<td colspan="4"></td>
+<td colspan="2">Принято посылок</td>
+<td colspan="4"></td>
+</tr>
+<tr class="print-table-report-row">
+<td colspan="2">Возвращено посылок</td>
+<td colspan="4"></td>
+<td colspan="2">Отменено сборов</td>
+<td colspan="4"></td>
+</tr>
+<tr class="print-table-report-row">
+<td colspan="2">Возвращено партий</td>
+<td colspan="4"></td>
+<td colspan="2">Перенесено сборов</td>
+<td colspan="4"></td>
+</tr>
+<tr class="print-table-signature-row">
+<td colspan="2"><strong>________________</strong></td>
+<td colspan="5"><strong>_______________________________</strong></td>
+<td colspan="5"><strong>_______________________________</strong></td>
+</tr>
+<tr class="print-table-help-row">
+<td colspan="2">дата</td>
+<td colspan="5">подпись</td>
+<td colspan="5">расшифровка</td>
+</tr>
+<tr class="print-table-report-header">
+<th colspan="12">Отчет по наложенному платежу</th>
+</tr>
+<tr class="print-table-report-row">
+<td colspan="2">Сумма наличными</td>
+<td colspan="10"></td>
+</tr>
+<tr class="print-table-report-row">
+<td colspan="2">Сумма по карте</td>
+<td colspan="10"></td>
+</tr>
+<tr class="print-table-signature-row">
+<td colspan="2"><strong>________________</strong></td>
+<td colspan="5"><strong>_______________________________</strong></td>
+<td colspan="5"><strong>_______________________________</strong></td>
+</tr>
+<tr class="print-table-help-row">
+<td colspan="2">дата</td>
+<td colspan="5">подпись</td>
+<td colspan="5">расшифровка</td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">
+    window.print();
+</script>
+</body>
+</html>
